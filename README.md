@@ -45,13 +45,11 @@ flowchart TD
 - streamlit_app.py
   - Streamlit UI の作成
   - ユーザー入力 → 関数呼び出し → 結果表示
-- 全てのファイルは notebook/<学籍番号>_<名字>/ に格納
 
-## ディレクトリ構成例
+
+## ディレクトリ構成
 ```bash
-
-notebook/
-└─ 2301201_yamamoto/
+streamlit/
    ├─ streamlit_app.py       # メイン UI
    ├─ src/
    │  └─ search_books.py    # API 呼び出し関数
@@ -70,4 +68,8 @@ streamlit run streamlit_app.py
 - 検索結果を CSV で保存
 - 表形式で表示、ソート機能追加
 - さらに複数 API を組み合わせて要約や推薦機能を追加
+
+## link
+
+- [stremlit cloud デプロイ先](https://app-exmple-icmri7cewrzltqlhbljckh.streamlit.app/)
 
