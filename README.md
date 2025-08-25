@@ -29,6 +29,7 @@ flowchart LR
 
 ## コード説明図（Layout）
 ```mermaid
+
 flowchart TD
     subgraph src
         VNG[search_books.py] --> F[fetch_books(query)]
@@ -37,6 +38,7 @@ flowchart TD
     streamlit_app.py --> UI[Streamlit UI]
     UI --> user_input[ユーザー入力]
     UI --> display[結果表示]
+
 ```
 
 - search_books.py
