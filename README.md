@@ -31,16 +31,13 @@ flowchart LR
 ```mermaid
 flowchart TD
     subgraph src ["srcフォルダ"]
-        VNG[search_books.py] 
-        F[fetch_books(query)]
-        VNG --> F
+        VNG["search_books.py"] --> F["fetch_books(query)"]
     end
 
     streamlit_app.py --> VNG
-    streamlit_app.py --> UI[Streamlit UI]
-    UI --> user_input[ユーザー入力]
-    UI --> display[結果表示]
-
+    streamlit_app.py --> UI["Streamlit UI"]
+    UI --> user_input["ユーザー入力"]
+    UI --> display["結果表示"]
 ```
 
 - search_books.py
